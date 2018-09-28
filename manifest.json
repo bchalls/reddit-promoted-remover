@@ -1,0 +1,16 @@
+{
+  "name": "Remove Reddit Promoted",
+  "version": "1.0",
+  "description": "Removes promoted posts as you browse",
+    "content_scripts": [
+    {
+      "matches": ["https://www.reddit.com/*"],
+      "js": ["remove_promoted.js"]
+    }
+  ],
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "manifest_version": 2
+}
